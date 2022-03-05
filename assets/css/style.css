@@ -139,8 +139,7 @@ header .row .logo_area img{
 }
 .hero_btn a{
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: var(--primary_size);
     color: #FFFFFF;
 }
 .hero_btn a i{
@@ -233,7 +232,6 @@ header .row .logo_area img{
 }
 .service_area .row{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     border-top: 2px solid #70707046;
     border-bottom: 2px solid #70707046;
@@ -591,8 +589,237 @@ footer .copy_right_area{
 }
 
 @media all and (max-width: 992px){
+    :root {
+        --primary_size: 15px;
+    }
     .hero_title h1 {
-        font-size: 63px;
-        line-height: 70px;
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .hero_right .hero_pic_group {
+        width: 443px;
+        height: 415px;
+    }
+    .hero_right .hero_pic_group .main_hero_pic {
+        width: 290px;
+    }
+    .cmnt_inner {
+        width: 190px;
+        height: 40px;
+    }
+    .cmnt_inner img {
+        width: 30px;
+        height: 30px;
+    }
+    .cmnt_inner span {
+        font-size: 13px;
+    }
+    .ratting_inner {
+        width: 190px;
+        height: 40px;
+    }
+    .ratting_inner span {
+        font-size: 13px;
+    }
+    .ratting_icon i {
+        font-size: 13px;
+    }
+    .hero_right .hero_pic_group .hero_ratting {
+        left: 40px;
+    }
+    .hero_btn {
+        width: 180px;
+        height: 55px;
+    }
+    .hero_right .hero_pic_group .hero_bg_1 {
+        bottom: 118px;
+        width: 115px;
+    }
+    .company img {
+        width: 142px;
+    }
+    .service_area .service_item .service_icon {
+        width: 55px;
+        height: 55px;
+    }
+    .service_area .service_item .service_icon i {
+        font-size: 25px;
+    }
+    .section_title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .foods_images {
+        max-width: 361px;
+        padding: 0 35px 75px 35px;
+    }
+    .foods_Dtsl {
+        max-width: 420px;
+        margin-top: 40px;
+    }
+    .food_dis .dis_count {
+        gap: 45px;
+    }
+    .variety_area .all_foods .foods_section .food .foods_text {
+        padding: 18px;
+    }
+    .variety_area .all_foods .foods_section .food .foods_text h3 {
+        font-size: 26px;
+        line-height: 35px;
+        margin-bottom: 25px;
+    }
+    .variety_area .all_foods .foods_section .food .foods_text p {
+        margin-bottom: 27px;
+    }
+    .section_btn a {
+        padding: 16px;
+        font-size: 14px;
+    }
+    .product_area .all_product .product_item .product_img {
+        width: 145px;
+        height: 145px;
+    }
+    .product_area .all_product .product_item .buy_btn a {
+        padding: 10px 15px;
+    }
+    footer .footer_get_in_touch .form input[type="text"] {
+        padding: 12px;
+        width: 55%;
+    }
+    footer .footer_get_in_touch .form input[type="submit"] {
+        padding: 12px 14px;
+        margin-left: 4px;
     }
 }
+    @media all and (max-width: 576px){
+        .hero_area .row {
+            flex-wrap: wrap;
+        }
+        .hero_left {
+            text-align: center;
+        }
+        .hero_title h1 {
+            font-size: 51px;
+            line-height: 62px;
+        }
+        .hero_btn {
+            width: 100%;
+            margin-bottom: 47px;
+        }
+        .hero_right {
+            margin: 0 auto;
+        }
+        .hero_right .hero_pic_group {
+            width: 314px;
+            height: 408px;
+            margin: 0 auto;
+        }
+        .hero_right .hero_pic_group .main_hero_pic {
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .hero_right .hero_pic_group .hero_bg_1 {
+            bottom: 0px;
+        }
+        .hero_right .hero_pic_group .hero_cmnt {
+            right: 83px;
+            top: 328px;
+        }
+        .hero_right .hero_pic_group .hero_ratting {
+            top: 384px;
+        }
+        .company {
+            gap: 61px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service_area .row {
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 80px;
+        }
+        .service_area .service_item {
+            flex-direction: column;
+        }
+        .foods_area .row {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .foods_images {
+            max-width: 100%;
+            padding: 0 35px 30px 35px;
+        }
+        .foods_Dtsl {
+            max-width: 100%;
+            text-align: center;
+        }
+        .section_title {
+            font-size: 35px;
+            line-height: 42px;
+        }
+        .foods_Dtsl .food_dis {
+            margin-top: 34px;
+            margin-left: 10px;
+        }
+        .food_dis .dis_count {
+            gap: unset;
+            flex-direction: column;
+        }
+        .variety_area .all_foods .foods_section {
+            flex-wrap: wrap;
+        }
+        .variety_area .all_foods .foods_section .food {
+            flex-wrap: wrap;
+        }
+        .variety_area .all_foods .foods_section .food .foods_image {
+            width: 100%;
+        }
+        .variety_area .all_foods .foods_section .food .foods_text {
+            width: 100%;
+            padding: 37px;
+        }
+        .variety_area .all_foods .foods_section .food .foods_text h3 {
+            margin-bottom: 31px;
+        }
+        .variety_area .all_foods .foods_section .food .foods_text p {
+            margin-bottom: 45px;
+        }
+        .product_area .all_product {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .product_area .all_product .product_item {
+            width: 100%;
+        }
+        .product_area .all_product .product_item .product_img {
+            width: 190px;
+            height: 190px;
+        }
+        .nav_area {
+            display: none;
+            align-items: center;
+        }
+        .footer_banner_area .inner_banner {
+            padding: 0 20px;
+        }
+        footer .row {
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 25px;
+        }
+        footer .social_Area {
+            width: 100%;
+            padding-right: 0;
+        }
+        footer .social_Area .social_icon {
+            justify-content: center;
+        }
+        footer .footer_page_Area, footer .footer_page_Area, footer .footer_get_in_touch {
+            width: 100%;
+        } 
+    }
